@@ -1,0 +1,15 @@
+import base64
+
+## encoding  
+s = "Hello World!"
+es = base64.b64encode(s.encode("utf-8")).decode("utf-8")
+print(es)
+
+## decoding 
+c = "SGVsbG8gV29ybGQh"
+db = base64.b64decode(c)
+ds = db.decode("utf-8")
+print(ds)
+
+
+
